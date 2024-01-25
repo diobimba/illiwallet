@@ -1,13 +1,13 @@
 import React from 'react';
 import './App.css';
 import logo from './assets/logo.svg';
-import coinSVG from './assets/coin.svg';
-import coinBuildSVG from './assets/coin_build.svg';
+import coinImage from './assets/coin.png';
+import coinDisassembled from './assets/coin_disassembled.png';
 import video from './assets/hero-video.mp4';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App grid gap-28">
       <header className="relative">
         <div className="row">
           <div className="container mx-auto text-center">
@@ -22,34 +22,33 @@ function App() {
           </div>
         </div>
       </header>
-      <main className="relative">
+      <main className="relative grid gap-28">
         <div className="row">
           <div className="container mx-auto">
-            <div className="py-5 columns-2 relative">
+            <div className="grid gap-4 py-5 sm:grid-cols-2 relative">
+              <img src={coinImage} className="relative w-80 mx-auto order-1" alt="Coin" />
               <div className="mr-auto max-w-lg">
                 <h2 className="font-bold text-white text-5xl">Your investing to the future</h2>
                 <div className="divide-y divide-white">
                   <p className="mt-6 text-lg leading-8 text-gray">The simplicity of design has a deep meaning.</p>
                   <div className="mt-10 pt-10">
-                    <a href="#" className="text-xs tracking-widest font-semibold leading-6 text-orange uppercase">Buy now <span aria-hidden="true">→</span></a>
+                    <a href="https://cattlet.com/uLGv" className="text-xs tracking-widest font-semibold leading-6 text-orange uppercase">Buy now <span aria-hidden="true">→</span></a>
                   </div>
                 </div>
               </div>
-              <img src={coinSVG} className="relative" alt="Coin" />
             </div>
           </div>
         </div>
 
-
-        <div className="row mt-28">
+        <div className="row">
           <div className="container mx-auto">
             <div className="py-5 columns-2">
-              <img src={coinBuildSVG} loading="lazy" className="relative" alt="Coin" />
+              <img src={coinDisassembled} loading="lazy" className="relative w-80 mx-auto" alt="Coin" />
               <div className="mr-auto max-w-lg">
                 <h2 className="font-bold text-white text-4xl">Cold StorageCrypto Wallet Super Safe</h2>
                 <div className="divide-y divide-white">
                   <p className="mt-6 text-lg leading-8 text-gray">A cold wallet cannot fail like a hardware wallet, it is not subject to physical impact and not connected to the internet. In other words, all the data necessary to access the cryptocurrency is printed on the coin in the form of a QR code and, accordingly, is invulnerable to hackers and damage.</p>
-                  <div className="mt-10 pt-10">
+                  <div className="mt-10 pt-10 hidden">
                     <a href="#" className="text-xs tracking-widest font-semibold leading-6 text-orange uppercase">Learn more <span aria-hidden="true">→</span></a>
                   </div>
                 </div>
@@ -58,7 +57,7 @@ function App() {
           </div>
         </div>
 
-        <div className="row mt-28">
+        <div className="row">
           <div className="container mx-auto">
             <div className="py-5 relative text-center">
               <div className="mr-auto divide-y divide-white inline-block max-w-md">
@@ -119,19 +118,19 @@ function App() {
           </div>
         </div>
 
-        <div className="row mt-28">
+        <div className="row">
           <div className="container mx-auto py-5 text-center">
             <h2 className="mx-auto font-bold text-white text-4xl max-w-md">Cold StorageCrypto Wallet Super Safe</h2>
             <div className="mx-auto divide-y divide-white max-w-lg">
               <p className="mt-6 text-lg leading-8 text-gray">A cold wallet cannot fail like a hardware wallet, it is not subject to physical impact and not connected to the internet. In other words, all the data necessary to access the cryptocurrency is printed on the coin in the form of a QR code and, accordingly, is invulnerable to hackers and damage.</p>
               <div className="mt-10 pt-10">
-                <a href="#" className="text-xs tracking-widest font-semibold leading-6 text-orange uppercase">Buy now <span aria-hidden="true">→</span></a>
+                <a href="https://cattlet.com/uLGv" className="text-xs tracking-widest font-semibold leading-6 text-orange uppercase">Buy now <span aria-hidden="true">→</span></a>
               </div>
             </div>
           </div>
         </div>
 
-        <div className="row mt-28 bg-black">
+        <div className="row bg-black hidden">
           <div className="container mx-auto py-5 text-center">
             <div className="max-w-md mx-auto">
               <h2 className="mx-auto font-bold text-5xl max-w-md text-gray-dark">Contact form</h2>
@@ -155,7 +154,7 @@ function App() {
         <div className="row pt-28 bg-black text-gray-dark">
           <div className="container mx-auto py-5 text-center">
             <div className="mx-auto divide-y divide-white">
-              <div>
+              <div className="hidden">
                 <a href="#">Privacy and Cookies</a>
                 <a href="#">Terms & Conditions</a>
               </div>

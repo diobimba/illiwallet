@@ -19,7 +19,16 @@ module.exports = {
       },
       blur: {
         '5xl': '125px',
-      }
+      },
+      container: {
+        screens: {
+          sm: '600px',
+          md: '728px',
+          lg: '900px',
+          xl: '900px',
+          '2xl': '900px',
+        },
+      },
     },
   },
   plugins: [],
