@@ -28,11 +28,11 @@ function App() {
             <div className="grid gap-4 py-5 sm:grid-cols-2 relative">
               <img src={coinImage} className="relative w-80 mx-auto order-1" alt="Coin" />
               <div className="mr-auto max-w-lg">
-                <h2 className="font-bold text-white text-5xl">Your investing to the future</h2>
+                <h2 className="font-bold text-white text-5xl">Your investment in the future</h2>
                 <div className="divide-y divide-white">
-                  <p className="mt-6 text-lg leading-8 text-gray">The simplicity of design has a deep meaning.</p>
+                  <p className="mt-6 text-lg leading-8 text-gray">The simplicity of the design has a deep meaning.</p>
                   <div className="mt-10 pt-10">
-                    <a href="https://cattlet.com/uLGv" className="text-xs tracking-widest font-semibold leading-6 text-orange uppercase">Buy now <span aria-hidden="true">→</span></a>
+                    <a href="https://cattlet.com/uLGv" className="text-xs tracking-widest font-semibold leading-6 text-orange uppercase">Learn more <span aria-hidden="true">→</span></a>
                   </div>
                 </div>
               </div>
