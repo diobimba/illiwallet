@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/freed0mdev/illiwallet/static/css/main.279a5050.css",
+    "main.js": "/freed0mdev/illiwallet/static/js/main.6a73513c.js",
+    "static/js/787.0eca6d6f.chunk.js": "/freed0mdev/illiwallet/static/js/787.0eca6d6f.chunk.js",
+    "static/media/hero-video.mp4": "/freed0mdev/illiwallet/static/media/hero-video.0ddab204e6a0a878eb52.mp4",
+    "static/media/coin.png": "/freed0mdev/illiwallet/static/media/coin.155c5ce31a69e7cd2823.png",
+    "static/media/coin_disassembled.png": "/freed0mdev/illiwallet/static/media/coin_disassembled.b2c00649319cf3dcebdd.png",
+    "static/media/logo.svg": "/freed0mdev/illiwallet/static/media/logo.301a46b851540a4163e699107526fadc.svg",
+    "index.html": "/freed0mdev/illiwallet/index.html",
+    "main.279a5050.css.map": "/freed0mdev/illiwallet/static/css/main.279a5050.css.map",
+    "main.6a73513c.js.map": "/freed0mdev/illiwallet/static/js/main.6a73513c.js.map",
+    "787.0eca6d6f.chunk.js.map": "/freed0mdev/illiwallet/static/js/787.0eca6d6f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.279a5050.css",
+    "static/js/main.6a73513c.js"
+  ]
+}
