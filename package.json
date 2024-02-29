@@ -1,6 +1,5 @@
 {
   "name": "illiwallet",
-  "homepage": "https://freed0mdev.github.io/illiwallet",
   "version": "0.1.0",
   "private": false,
   "dependencies": {
