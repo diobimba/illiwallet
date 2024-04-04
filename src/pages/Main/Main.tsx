@@ -153,9 +153,8 @@ function MainPage() {
         <div className="row pt-28 bg-black text-gray-dark">
           <div className="container mx-auto py-5 text-center">
             <div className="mx-auto divide-y divide-white">
-              <div className="hidden">
-                <a href="#">Privacy and Cookies</a>
-                <a href="#">Terms & Conditions</a>
+              <div>
+                <a href="/instructions">Instructions & Balance checker</a>
               </div>
               <p className="mt-10 pt-10 mx-auto font-bold text-white">® ILLI Wallet - 2024</p>
             </div>
