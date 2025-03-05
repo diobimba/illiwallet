@@ -28,15 +28,15 @@ function MainPage() {
       }
       function ShopifyBuyInit() {
         // @ts-ignore
-        var client = window.ShopifyBuy.buildClient({
+        var client = ShopifyBuy.buildClient({
           domain: 'ds88bt-qi.myshopify.com',
           storefrontAccessToken: '4e0588c53b37e40a2415f76bae9ace35',
         });
         // @ts-ignore
-        window.ShopifyBuy.UI.onReady(client).then(function (ui: any) {
+        ShopifyBuy.UI.onReady(client).then(function (ui) {
           ui.createComponent('product', {
             id: '10033697161531',
-            node: document.getElementById('product-component-1741187820047'),
+            node: document.getElementById('product-component-1741188376825'),
             moneyFormat: '%E2%82%B4%7B%7Bamount%7D%7D',
             options: {
               "product": {
@@ -47,9 +47,23 @@ function MainPage() {
                       "margin-left": "20px",
                       "margin-bottom": "50px"
                     }
+                  },
+                  "button": {
+                    ":hover": {
+                      "background-color": "#d88917"
+                    },
+                    "background-color": "#f09819",
+                    ":focus": {
+                      "background-color": "#d88917"
+                    }
                   }
                 },
                 "buttonDestination": "checkout",
+                "contents": {
+                  "img": false,
+                  "title": false,
+                  "price": false
+                },
                 "text": {
                   "button": "Buy now"
                 }
@@ -77,6 +91,15 @@ function MainPage() {
                       "margin-left": "0px",
                       "margin-bottom": "0px"
                     }
+                  },
+                  "button": {
+                    ":hover": {
+                      "background-color": "#d88917"
+                    },
+                    "background-color": "#f09819",
+                    ":focus": {
+                      "background-color": "#d88917"
+                    }
                   }
                 },
                 "text": {
@@ -85,13 +108,36 @@ function MainPage() {
               },
               "option": {},
               "cart": {
+                "styles": {
+                  "button": {
+                    ":hover": {
+                      "background-color": "#d88917"
+                    },
+                    "background-color": "#f09819",
+                    ":focus": {
+                      "background-color": "#d88917"
+                    }
+                  }
+                },
                 "text": {
                   "total": "Subtotal",
                   "button": "Checkout"
                 },
                 "popup": false
               },
-              "toggle": {}
+              "toggle": {
+                "styles": {
+                  "toggle": {
+                    "background-color": "#f09819",
+                    ":hover": {
+                      "background-color": "#d88917"
+                    },
+                    ":focus": {
+                      "background-color": "#d88917"
+                    }
+                  }
+                }
+              }
             },
           });
         });
@@ -124,8 +170,8 @@ function MainPage() {
                 <h2 className="font-bold text-white text-5xl">Your investment in the future</h2>
                 <div className="divide-y divide-white">
                   <p className="mt-6 text-lg leading-8 text-gray">The simplicity of the design has a deep meaning.</p>
-                  <div className="mt-10 pt-10">
-                    <a href="https://cattlet.com/uLGv" className="text-xs tracking-widest font-semibold leading-6 text-orange uppercase">Learn more <span aria-hidden="true">→</span></a>
+                  <div className="mt-10">
+                    <div className="mx-auto" id='product-component-1741188376825'></div>
                   </div>
                 </div>
               </div>
@@ -216,10 +262,6 @@ function MainPage() {
             <h2 className="mx-auto font-bold text-white text-4xl max-w-md">Cold StorageCrypto Wallet Super Safe</h2>
             <div className="mx-auto divide-y divide-white max-w-lg">
               <p className="mt-6 text-lg leading-8 text-gray">A cold wallet cannot fail like a hardware wallet, it is not subject to physical impact and not connected to the internet. In other words, all the data necessary to access the cryptocurrency is printed on the coin in the form of a QR code and, accordingly, is invulnerable to hackers and damage.</p>
-              <div className="mt-10 pt-10">
-                <div id='product-component-1741187820047'></div>
-                <a href="https://cattlet.com/uLGv" className="text-xs tracking-widest font-semibold leading-6 text-orange uppercase">Buy now <span aria-hidden="true">→</span></a>
-              </div>
             </div>
           </div>
         </div>
