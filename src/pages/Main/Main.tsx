@@ -8,7 +8,9 @@ function MainPage() {
   useEffect(() => {
     (function () {
       var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+      // @ts-ignore
       if (window.ShopifyBuy) {
+        // @ts-ignore
         if (window.ShopifyBuy.UI) {
           ShopifyBuyInit();
         } else {
@@ -25,11 +27,13 @@ function MainPage() {
         script.onload = ShopifyBuyInit;
       }
       function ShopifyBuyInit() {
-        var client = ShopifyBuy.buildClient({
+        // @ts-ignore
+        var client = window.ShopifyBuy.buildClient({
           domain: 'ds88bt-qi.myshopify.com',
           storefrontAccessToken: '4e0588c53b37e40a2415f76bae9ace35',
         });
-        ShopifyBuy.UI.onReady(client).then(function (ui) {
+        // @ts-ignore
+        window.ShopifyBuy.UI.onReady(client).then(function (ui: any) {
           ui.createComponent('product', {
             id: '10033697161531',
             node: document.getElementById('product-component-1741187820047'),
